@@ -5,8 +5,8 @@ try:
 except ImportError:
     import ustruct as struct
 
-# Connect the sensor TX pin to the board TX pin
-#                    RX pin to the board RX pin
+# Connect the sensor TX pin to the board 25 pin
+#                    RX pin to the board 26 pin
 # For use with a microcontroller board:
 import machine
 uart = UART(1, baudrate=9600, tx=25, rx=26, timeout=2000)
